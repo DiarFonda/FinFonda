@@ -1,0 +1,33 @@
+{
+  "version": 2,
+  "dgSpecHash": "uEGb9Uo59s0=",
+  "success": false,
+  "projectFilePath": "C:\\Users\\Diarf\\FinFonda\\api\\api.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Diarf\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.0\\microsoft.aspnetcore.openapi.9.0.0.nupkg.sha512",
+    "C:\\Users\\Diarf\\.nuget\\packages\\microsoft.entityframeworkcore.design\\10.0.0-preview.1.25081.1\\microsoft.entityframeworkcore.design.10.0.0-preview.1.25081.1.nupkg.sha512",
+    "C:\\Users\\Diarf\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\10.0.0-preview.1.25081.1\\microsoft.entityframeworkcore.sqlserver.10.0.0-preview.1.25081.1.nupkg.sha512",
+    "C:\\Users\\Diarf\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\10.0.0-preview.1.25081.1\\microsoft.entityframeworkcore.tools.10.0.0-preview.1.25081.1.nupkg.sha512",
+    "C:\\Users\\Diarf\\.nuget\\packages\\microsoft.openapi\\1.6.17\\microsoft.openapi.1.6.17.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1202",
+      "level": "Error",
+      "message": "Package Microsoft.EntityFrameworkCore.Design 10.0.0-preview.1.25081.1 is not compatible with net9.0 (.NETCoreApp,Version=v9.0). Package Microsoft.EntityFrameworkCore.Design 10.0.0-preview.1.25081.1 supports: net10.0 (.NETCoreApp,Version=v10.0)",
+      "libraryId": "Microsoft.EntityFrameworkCore.Design",
+      "targetGraphs": [
+        "net9.0"
+      ]
+    },
+    {
+      "code": "NU1202",
+      "level": "Error",
+      "message": "Package Microsoft.EntityFrameworkCore.SqlServer 10.0.0-preview.1.25081.1 is not compatible with net9.0 (.NETCoreApp,Version=v9.0). Package Microsoft.EntityFrameworkCore.SqlServer 10.0.0-preview.1.25081.1 supports: net10.0 (.NETCoreApp,Version=v10.0)",
+      "libraryId": "Microsoft.EntityFrameworkCore.SqlServer",
+      "targetGraphs": [
+        "net9.0"
+      ]
+    }
+  ]
+}
