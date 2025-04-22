@@ -20,7 +20,7 @@ var app = builder.Build();
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger(); // Enable Swagger UI
-    // app.UseSwaggerUI(); // Display the Swagger UI in Development mode
+    app.UseSwaggerUI(); // Display the Swagger UI in Development mode
 }
 
 app.UseHttpsRedirection(); // Redirect HTTP to HTTPS
@@ -44,6 +44,8 @@ app.MapGet("/weatherforecast", () =>
     return forecast;
 })
 .WithName("GetWeatherForecast");
+
+app.MapControllers();
 
 app.Run();
 
