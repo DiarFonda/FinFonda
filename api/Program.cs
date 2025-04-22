@@ -1,3 +1,7 @@
+using api.Data;
+using Microsoft.EntityFrameworkCore;
+
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -7,9 +11,9 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();  // Required for the OpenAPI documentation
 builder.Services.AddSwaggerGen(); // Adds Swagger services for API documentation
 
-builder.Services.AddDbContext<ApplicationDBContext>(options => {
-    options.useSqlServer(builder.Configuration.GetConnectionString('DefaulConnection'))
-})
+builder.Services.AddDbContext<ApplicationDbContext>(options => {
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
+});
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
