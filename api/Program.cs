@@ -1,4 +1,6 @@
 using api.Data;
+using api.interfaces;
+using api.Repository;
 using Microsoft.EntityFrameworkCore;
 
 
@@ -14,6 +16,9 @@ builder.Services.AddSwaggerGen(); // Adds Swagger services for API documentation
 builder.Services.AddDbContext<ApplicationDbContext>(options => {
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
+
+builder.Services.AddScoped<IStockRepository, StockRepository>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
